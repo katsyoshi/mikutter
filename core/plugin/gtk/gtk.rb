@@ -2,7 +2,7 @@
 
 # RubyGnome2を用いてUIを表示するプラグイン
 
-require "gtk2"
+require "gtk3"
 
 miquire :mui,
 'cell_renderer_message', 'coordinate_module', 'icon_over_button', 'inner_tl', 'markup_generator',

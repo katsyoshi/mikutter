@@ -2,7 +2,7 @@
 
 miquire :mui, 'sub_parts_voter'
 
-require 'gtk2'
+require 'gtk3'
 require 'cairo'
 
 class Gdk::SubPartsFavorite < Gdk::SubPartsVoter

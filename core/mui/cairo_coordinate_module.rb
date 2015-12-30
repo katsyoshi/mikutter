@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-require 'gtk2'
+require 'gtk3'
 
 # Messageをレンダリングする際の、各パーツの座標の取得設定のためのモジュール
 module Gdk::Coordinate

@@ -2,7 +2,7 @@
 miquire :lib, 'uithreadonly'
 miquire :core, 'userconfig'
 
-require 'gtk2'
+require 'gtk3'
 require 'cairo'
 
 module Gdk::SubPartsHelper
