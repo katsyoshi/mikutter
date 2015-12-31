@@ -24,12 +24,12 @@ module Gtk
                Integer, Integer)
 
     signal_new("motion_notify_event", GLib::Signal::RUN_FIRST, nil, nil,
-               Gtk::BINDING_VERSION >= [2,0,3] ? Gdk::EventMotion : Gdk::EventButton,
+               Gdk::EventMotion,
                Gtk::TreePath, Gtk::TreeViewColumn,
                Integer, Integer)
 
     signal_new("leave_notify_event", GLib::Signal::RUN_FIRST, nil, nil,
-               Gtk::BINDING_VERSION >= [2,0,3] ? Gdk::EventCrossing : Gdk::EventButton,
+               Gdk::EventCrossing,
                Gtk::TreePath, Gtk::TreeViewColumn,
                Integer, Integer)
 
@@ -189,20 +189,14 @@ module Gtk
         false }
     end
 
-    # RubyGtk2 2.0.3以降は、motion_notify_eventやleave_notify_eventに
-    # 発行されるイベントが変更されている
-    if Gtk::BINDING_VERSION >= [2,0,3]
-      def emit_leave_notify_from_event_motion(e, *args)
-        signal_emit("leave_notify_event",
-                    Gdk::EventCrossing.new(Gdk::Event::LEAVE_NOTIFY).tap{ |le|
-                      le.time = e.time
-                      le.x, le.y = e.x, e.y
-                      le.x_root, le.y_root = e.x_root, e.y_root
-                      le.focus = true
-                    }, *args) end
-    else
-      def emit_leave_notify_from_event_motion(e, *args)
-        signal_emit("leave_notify_event", e, *args) end end
+    def emit_leave_notify_from_event_motion(e, *args)
+      signal_emit("leave_notify_event",
+                  Gdk::EventCrossing.new(Gdk::Event::LEAVE_NOTIFY).tap{ |le|
+                    le.time = e.time
+                    le.x, le.y = e.x, e.y
+                    le.x_root, le.y_root = e.x_root, e.y_root
+                    le.focus = true
+                  }, *args) end
 
   end
 end

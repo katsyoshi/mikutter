@@ -8,7 +8,7 @@ RUBY_SERVER='http://ftp.ruby-lang.org/pub/ruby'
 INSTALL_DIR='/opt/miku'
 SRC_DIR="${INSTALL_DIR}/src"
 DEPENDS='gcc make bzip2 wget pkg-config subversion
-         libgtk2.0-dev libyaml-dev libssl-dev zlib1g-dev'
+         libgtk3.0-dev libyaml-dev libssl-dev zlib1g-dev'
 
 if   [ -e ${INSTALL_DIR} ] && [   -d ${INSTALL_DIR} ]; then
     echo "mikutter setup to ${INSTALL_DIR}"
@@ -122,8 +122,8 @@ while read RUBY_VERSION; do
     ${INSTALL_DIR}/rb${S_VERSION}/bin/gem${RUBY_SUFFIX} install pkg-config
     echo 'gem install ruby-hmac'
     ${INSTALL_DIR}/rb${S_VERSION}/bin/gem${RUBY_SUFFIX} install ruby-hmac
-    echo 'gem install gtk2'
-    ${INSTALL_DIR}/rb${S_VERSION}/bin/gem${RUBY_SUFFIX} install gtk2
+    echo 'gem install gtk3'
+    ${INSTALL_DIR}/rb${S_VERSION}/bin/gem${RUBY_SUFFIX} install gtk3
 
 
     # Install scripts
@@ -153,7 +153,7 @@ cd ${INSTALL_DIR}/mikutter
 ../rb${S_VERSION}/bin/ruby${RUBY_SUFFIX} -v
 ../rb${S_VERSION}/bin/gem${RUBY_SUFFIX}  -v
 ../rb${S_VERSION}/bin/ruby${RUBY_SUFFIX} -rubygems \\
-       -e 'require "gtk2"; printf("Gtk2:    %s\n", Gtk::VERSION.join("."))'
+       -e 'require "gtk3"; printf("Gtk2:    %s\n", Gtk::VERSION.join("."))'
 ../rb${S_VERSION}/bin/ruby${RUBY_SUFFIX} -rubygems \\
        -e 'require "hmac"; printf("HMAC:    %s\n", HMAC::VERSION)'
 EOF

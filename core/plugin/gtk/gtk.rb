@@ -17,7 +17,7 @@ require File.expand_path File.join(File.dirname(__FILE__), 'tab_toolbar')
 require File.expand_path File.join(File.dirname(__FILE__), 'delayer')
 require File.expand_path File.join(File.dirname(__FILE__), 'slug_dictionary')
 require File.expand_path File.join(File.dirname(__FILE__), 'mainloop')
-require File.expand_path File.join(File.dirname(__FILE__), 'konami_watcher')
+# require File.expand_path File.join(File.dirname(__FILE__), 'konami_watcher')
 
 Plugin.create :gtk do
   @slug_dictionary = Plugin::Gtk::SlugDictionary.new # widget_type => {slug => Gtk}

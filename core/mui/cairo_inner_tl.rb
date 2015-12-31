@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-miquire :mui, 'timeline', 'tree_view_pretty_scroll', 'dark_matter_prification'
+miquire :mui, 'timeline', 'tree_view_pretty_scroll'
 miquire :lib, 'uithreadonly'
 require 'gtk2'
 
@@ -8,7 +8,6 @@ class Gtk::TimeLine::InnerTL < Gtk::CRUD
 
   include UiThreadOnly
   include Gtk::TreeViewPrettyScroll
-  include Gtk::InnerTLDarkMatterPurification
 
   attr_writer :force_retrieve_in_reply_to
   attr_accessor :postbox, :imaginary

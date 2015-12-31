@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-require "gtk2"
+require "gtk3"
 
 class Gtk::TabContainer < Gtk::VBox
   attr_reader :i_tab

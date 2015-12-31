@@ -89,10 +89,10 @@ class Gdk::MiraclePainter < Gtk::Object
   signal_new(:click, GLib::Signal::RUN_FIRST, nil, nil,
              Gdk::EventButton, Integer, Integer)
 
-  signal_new(:motion_notify_event, GLib::Signal::RUN_FIRST, nil, nil,
-             Integer, Integer)
+#  signal_new(:motion_notify_event, GLib::Signal::RUN_FIRST, nil, nil,
+#             Integer, Integer)
 
-  signal_new(:leave_notify_event, GLib::Signal::RUN_FIRST, nil, nil)
+#  signal_new(:leave_notify_event, GLib::Signal::RUN_FIRST, nil, nil)
 
   def signal_do_click(event, cell_x, cell_y)
   end

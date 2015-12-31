@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-require "gtk2"
+require "gtk3"
 miquire :lib, "delayer"
 
 Module.new do

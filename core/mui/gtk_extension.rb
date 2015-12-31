@@ -169,7 +169,7 @@ class Gtk::Lock
   end
 end
 
-class Gtk::Widget < Gtk::Object
+class Gtk::Widget
   # ウィジェットを上寄せで配置する
   def top
     Gtk::Alignment.new(0.0, 0, 0, 0).add(self)
@@ -207,7 +207,8 @@ class Gtk::Container < Gtk::Widget
   # _widget_ を詰めて配置する。closeupで配置されたウィジェットは無理に親の幅に合わせられることがない。
   # pack_start(_widget_, false)と等価。
   def closeup(widget)
-    self.pack_start(widget, false)
+    options = {expand: false}
+    self.pack_start(widget, options)
   end
 end
 
