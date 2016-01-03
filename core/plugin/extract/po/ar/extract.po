@@ -1,5 +1,5 @@
 # Japanese translations for extract package.
-# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2016 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extract package.
 # 
 # Translators:
