@@ -7,29 +7,7 @@ def source(url)
 
 source 'https://rubygems.org'
 
-group :default do
-  gem 'oauth', '>= 0.5.1'
-  gem 'json_pure', '~> 1.8'
-  gem 'addressable', '~> 2.3'
-  gem 'diva', '>= 0.1.1', '< 2.0'
-  gem 'memoist', '>= 0.16', '< 0.17'
-  gem 'ruby-hmac', '~> 0.4'
-  gem 'typed-array', '~> 0.1'
-  gem 'delayer', '~> 0.0'
-  gem 'pluggaloid', '>= 1.1.1', '< 2.0'
-  gem 'delayer-deferred', '>= 1.0.4', '< 1.1'
-  gem 'twitter-text', '>= 1.14.6'
-end
-
-group :test do
-  gem 'test-unit', '~> 3.0'
-  gem 'rake', '~> 10.1'
-  gem 'watch', '~> 0.1'
-  gem 'mocha', '~> 0.14'
-  gem 'webmock', '~> 1.17'
-  gem 'ruby-prof'
-end
-
+gemspec
 
 group :plugin do
   Dir.glob(File.expand_path(File.join(__dir__, 'core/plugin/*/Gemfile'))){ |path|
