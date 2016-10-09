@@ -18,7 +18,7 @@ Mopt.parse exec_command: true
 
 if !ENV['DISABLE_BUNDLER_SETUP'] || ['', '0'].include?(ENV['DISABLE_BUNDLER_SETUP'].to_s)
   begin
-    ENV['BUNDLE_GEMFILE'] = File.expand_path(File.join(File.dirname($0), "Gemfile"))
+    ENV['BUNDLE_GEMFILE'] = File.expand_path(File.join(mikutter_directory, "Gemfile"))
     require 'bundler/setup'
   rescue LoadError, SystemExit
     # bundlerがないか、依存関係の解決に失敗した場合
