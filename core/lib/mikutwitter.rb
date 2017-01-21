@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 # よくもこんなキ○ガイライブラリを！！！
 # だってだってぇ、Twitterとかにしたら、他と名前被るじゃないですかぁ〜（悲）

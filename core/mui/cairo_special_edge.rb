@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 module Cairo::SpecialEdge
   FOOTER_URL = 'http://mikutter.hachune.net/img/footer.png'

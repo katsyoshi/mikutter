@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 
 MIKUTWITTER_TEST_DIR = File.expand_path(File.dirname(__FILE__))

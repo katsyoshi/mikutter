@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 =begin rdoc
 =Recerve - 指定時間にブロックを実行

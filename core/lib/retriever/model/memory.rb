@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 class Retriever::Model::Memory
   include Retriever::DataSource

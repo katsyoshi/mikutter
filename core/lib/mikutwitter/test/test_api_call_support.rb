@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 require "#{File.dirname(__FILE__)}/extension"
 require 'test/unit'

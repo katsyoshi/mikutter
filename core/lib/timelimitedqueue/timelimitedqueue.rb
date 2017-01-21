@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 =begin rdoc
 コールバック機能付きキュー。コンストラクタに渡したブロックが、pushされた値の集合を引数に呼ばれる。

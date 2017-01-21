@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 
 miquire :mui, 'sub_parts_voter'

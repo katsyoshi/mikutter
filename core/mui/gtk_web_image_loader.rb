@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # -*- coding: utf-8 -*-
 # 画像のURLを受け取って、Gtk::Pixbufを返す
 
