@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'ruby-hmac', '~> 0.4'
   spec.add_dependency 'typed-array', '~> 0.1'
   spec.add_dependency 'delayer', '~> 0.0'
+  spec.add_dependency 'diva'
   spec.add_dependency 'pluggaloid', '>= 1.1.1', '< 2.0'
   spec.add_dependency 'delayer-deferred', '>= 1.0.3', '< 2.0'
   spec.add_dependency 'twitter-text'
